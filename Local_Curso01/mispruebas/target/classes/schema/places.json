@@ -1,0 +1,149 @@
+{
+ "query": {
+  "count": 1,
+  "created": "2018-05-16T04:44:18Z",
+  "lang": "es-419",
+  "results": {
+   "channel": {
+    "units": {
+     "distance": "mi",
+     "pressure": "in",
+     "speed": "mph",
+     "temperature": "F"
+    },
+    "title": "Yahoo! Weather - Lima, Lima Metropolitan Area, PE",
+    "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-418440/",
+    "description": "Yahoo! Weather for Lima, Lima Metropolitan Area, PE",
+    "language": "en-us",
+    "lastBuildDate": "Tue, 15 May 2018 11:44 PM PET",
+    "ttl": "60",
+    "location": {
+     "city": "Lima",
+     "country": "Peru",
+     "region": " Lima Metropolitan Area"
+    },
+    "wind": {
+     "chill": "64",
+     "direction": "135",
+     "speed": "14"
+    },
+    "atmosphere": {
+     "humidity": "90",
+     "pressure": "991.0",
+     "rising": "0",
+     "visibility": "13.7"
+    },
+    "astronomy": {
+     "sunrise": "6:18 am",
+     "sunset": "5:51 pm"
+    },
+    "image": {
+     "title": "Yahoo! Weather",
+     "width": "142",
+     "height": "18",
+     "link": "http://weather.yahoo.com",
+     "url": "http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif"
+    },
+    "item": {
+     "title": "Conditions for Lima, Lima Metropolitan Area, PE at 11:00 PM PET",
+     "lat": "-12.0436",
+     "long": "-77.021217",
+     "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-418440/",
+     "pubDate": "Tue, 15 May 2018 11:00 PM PET",
+     "condition": {
+      "code": "27",
+      "date": "Tue, 15 May 2018 11:00 PM PET",
+      "temp": "64",
+      "text": "Mostly Cloudy"
+     },
+     "forecast": [
+      {
+       "code": "30",
+       "date": "15 May 2018",
+       "day": "Tue",
+       "high": "77",
+       "low": "62",
+       "text": "Partly Cloudy"
+      },
+      {
+       "code": "30",
+       "date": "16 May 2018",
+       "day": "Wed",
+       "high": "73",
+       "low": "63",
+       "text": "Partly Cloudy"
+      },
+      {
+       "code": "30",
+       "date": "17 May 2018",
+       "day": "Thu",
+       "high": "71",
+       "low": "60",
+       "text": "Partly Cloudy"
+      },
+      {
+       "code": "34",
+       "date": "18 May 2018",
+       "day": "Fri",
+       "high": "69",
+       "low": "59",
+       "text": "Mostly Sunny"
+      },
+      {
+       "code": "34",
+       "date": "19 May 2018",
+       "day": "Sat",
+       "high": "70",
+       "low": "58",
+       "text": "Mostly Sunny"
+      },
+      {
+       "code": "34",
+       "date": "20 May 2018",
+       "day": "Sun",
+       "high": "71",
+       "low": "59",
+       "text": "Mostly Sunny"
+      },
+      {
+       "code": "30",
+       "date": "21 May 2018",
+       "day": "Mon",
+       "high": "73",
+       "low": "61",
+       "text": "Partly Cloudy"
+      },
+      {
+       "code": "30",
+       "date": "22 May 2018",
+       "day": "Tue",
+       "high": "73",
+       "low": "62",
+       "text": "Partly Cloudy"
+      },
+      {
+       "code": "30",
+       "date": "23 May 2018",
+       "day": "Wed",
+       "high": "73",
+       "low": "62",
+       "text": "Partly Cloudy"
+      },
+      {
+       "code": "30",
+       "date": "24 May 2018",
+       "day": "Thu",
+       "high": "71",
+       "low": "61",
+       "text": "Partly Cloudy"
+      }
+     ],
+     "description": "<![CDATA[<img src=\"http://l.yimg.com/a/i/us/we/52/27.gif\"/>\n<BR />\n<b>Current Conditions:</b>\n<BR />Mostly Cloudy\n<BR />\n<BR />\n<b>Forecast:</b>\n<BR /> Tue - Partly Cloudy. High: 77Low: 62\n<BR /> Wed - Partly Cloudy. High: 73Low: 63\n<BR /> Thu - Partly Cloudy. High: 71Low: 60\n<BR /> Fri - Mostly Sunny. High: 69Low: 59\n<BR /> Sat - Mostly Sunny. High: 70Low: 58\n<BR />\n<BR />\n<a href=\"http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-418440/\">Full Forecast at Yahoo! Weather</a>\n<BR />\n<BR />\n<BR />\n]]>",
+     "guid": {
+      "isPermaLink": "false"
+     }
+    }
+   }
+  }
+ }
+}
