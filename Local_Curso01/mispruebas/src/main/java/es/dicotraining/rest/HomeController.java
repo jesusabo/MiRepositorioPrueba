@@ -6,19 +6,26 @@ import java.net.URISyntaxException;
 import java.util.List;
 import java.util.Locale;
 
+import javax.annotation.Resource;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
 
-
+import es.dicotraining.domain.Person;
+import es.dicotraining.domain.PersonList;
+import es.dicotraining.service.PersonService;
 import es.dicotraining.weather.domains.Country;
 import es.dicotraining.weather.places.Forecast;
 import es.dicotraining.weather.places.Places;
@@ -31,7 +38,7 @@ import es.dicotraining.weather.weather.Weather;
 @Controller
 public class HomeController {
 	
-	
+
 	
 	private static final String PLACES_SUFIX = "%2C%20ak%22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys";
 	private static final String PLACES_PREFIX = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22";
@@ -84,6 +91,42 @@ public class HomeController {
 		
 		return "resul";
 	}
+	
+	
+	@Resource(name="personService")
+	private PersonService personService;
+	
+	
+	
+	@RequestMapping(value="/persons", method=RequestMethod.GET , headers="Accept=application/xml")
+	private @ResponseBody PersonList getPersons(){
+		System.out.println("Llego a persons");
+		PersonList result = new PersonList();
+		
+		result.setData(personService.getAll());
+		
+		return result;
+	}
+	
+	
+	@RequestMapping(value="/person/{id}" , method= RequestMethod.GET, headers="Accept=application/xml")
+	private @ResponseBody Person obtenerPersona(@PathVariable("id") Long id){
+		System.out.println("Id del Servidor: "+ id);
+		return personService.get(id);
+		
+	}
+	
+	@RequestMapping(value= "person/{id}/{firsname}" , method = RequestMethod.PUT , headers = "Accept=application/xml")
+	public @ResponseBody String actualizarPersona(@PathVariable("id") Long id, @PathVariable("firsname") String firsname,@RequestBody Person person){
+		
+		person.setId(id);
+		return personService.editar(person).toString();
+		
+		
+	}
+	
+	
+	
 	
 	
 
