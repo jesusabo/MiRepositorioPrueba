@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+		
+		<script type="text/javascript">
+			function miFuncion()
+						{
+			var f="";
+			alert("Activaste la funcion miFuncion()");
+			var a = "Esto es una prueba ";
+			var b = a.length;
+			var c= a.trim().length;
+			var pos=0;
+				for(var b =0;b<a.trim().length;b++){					
+					if(a[b]!=" "){
+						f += a[b];
+					}else{
+						pos=b;
+					}
+				}
+				
+				var d ="";
+				for(var b =pos+1;b<a.trim().length;b++){
+					d += a[b];
+				}
+				alert(c);
+				
+				alert(f);
+				alert(d);
+			}
+		</script>
+
+
+		
+		
+    </head>
+    <body>
+        <h1>Hello World!111</h1>
+      
+        <input type="button" onclick="miFuncion();" value="ejecutar">
+    </body> 
+</html>
