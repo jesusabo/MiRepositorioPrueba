@@ -1,0 +1,162 @@
+
+jesus@DESKTOP-7SQA7SN MINGW64 /d/Pruebas_GIT
+$
+
+jesus@DESKTOP-7SQA7SN MINGW64 /d/Pruebas_GIT
+$ git clone https://github.com/jesusabo/MiRepositorioPrueba.git
+Cloning into 'MiRepositorioPrueba'...
+remote: Counting objects: 416, done.
+remote: Compressing objects: 100% (230/230), done.
+remote: Total 416 (delta 122), reused 388 (delta 94), pack-reused 0
+Receiving objects: 100% (416/416), 191.70 KiB | 604.00 KiB/s, done.
+Resolving deltas: 100% (122/122), done.
+Checking out files: 100% (146/146), done.
+
+jesus@DESKTOP-7SQA7SN MINGW64 /d/Pruebas_GIT
+$ ls
+MiRepositorioPrueba/
+
+jesus@DESKTOP-7SQA7SN MINGW64 /d/Pruebas_GIT
+$ cd MiRepositorioPrueba
+
+jesus@DESKTOP-7SQA7SN MINGW64 /d/Pruebas_GIT/MiRepositorioPrueba (master)
+$ ls
+Local_Curso01/
+
+jesus@DESKTOP-7SQA7SN MINGW64 /d/Pruebas_GIT/MiRepositorioPrueba (master)
+$ git lod
+git: 'lod' is not a git command. See 'git --help'.
+
+The most similar command is
+        log
+
+jesus@DESKTOP-7SQA7SN MINGW64 /d/Pruebas_GIT/MiRepositorioPrueba (master)
+$ git remote
+origin
+
+jesus@DESKTOP-7SQA7SN MINGW64 /d/Pruebas_GIT/MiRepositorioPrueba (master)
+$ touch ModificacionChula
+
+jesus@DESKTOP-7SQA7SN MINGW64 /d/Pruebas_GIT/MiRepositorioPrueba (master)
+$ git add .
+
+jesus@DESKTOP-7SQA7SN MINGW64 /d/Pruebas_GIT/MiRepositorioPrueba (master)
+$ git commit
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'jesus@DESKTOP-7SQA7SN.(none)')
+
+jesus@DESKTOP-7SQA7SN MINGW64 /d/Pruebas_GIT/MiRepositorioPrueba (master)
+$ ^C
+
+jesus@DESKTOP-7SQA7SN MINGW64 /d/Pruebas_GIT/MiRepositorioPrueba (master)
+$ ^C
+
+jesus@DESKTOP-7SQA7SN MINGW64 /d/Pruebas_GIT/MiRepositorioPrueba (master)
+$ git config user.email jbringaso14@gmail.com
+
+jesus@DESKTOP-7SQA7SN MINGW64 /d/Pruebas_GIT/MiRepositorioPrueba (master)
+$ git config user.name jesus
+
+jesus@DESKTOP-7SQA7SN MINGW64 /d/Pruebas_GIT/MiRepositorioPrueba (master)
+$ git commit
+[master 86d556d] MiModificacionChula new file:   ModificacionChula
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 ModificacionChula
+
+jesus@DESKTOP-7SQA7SN MINGW64 /d/Pruebas_GIT/MiRepositorioPrueba (master)
+$ git push origin master
+Counting objects: 2, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 296 bytes | 296.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0)
+To https://github.com/jesusabo/MiRepositorioPrueba.git
+   449c5cb..86d556d  master -> master
+
+jesus@DESKTOP-7SQA7SN MINGW64 /d/Pruebas_GIT/MiRepositorioPrueba (master)
+$ touch SegundaModificacionDesdeGitBash
+
+jesus@DESKTOP-7SQA7SN MINGW64 /d/Pruebas_GIT/MiRepositorioPrueba (master)
+$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+
+jesus@DESKTOP-7SQA7SN MINGW64 /d/Pruebas_GIT/MiRepositorioPrueba (master)
+$ git add .
+
+jesus@DESKTOP-7SQA7SN MINGW64 /d/Pruebas_GIT/MiRepositorioPrueba (master)
+$ git commid
+git: 'commid' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+jesus@DESKTOP-7SQA7SN MINGW64 /d/Pruebas_GIT/MiRepositorioPrueba (master)
+$ git commit
+[master a88cff1] SegundaModDesdeGitBash
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 SegundaModificacionDesdeGitBash
+
+jesus@DESKTOP-7SQA7SN MINGW64 /d/Pruebas_GIT/MiRepositorioPrueba (master)
+$ git push
+Counting objects: 2, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 316 bytes | 316.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0)
+To https://github.com/jesusabo/MiRepositorioPrueba.git
+   86d556d..a88cff1  master -> master
+
+jesus@DESKTOP-7SQA7SN MINGW64 /d/Pruebas_GIT/MiRepositorioPrueba (master)
+$ ls
+Local_Curso01/  ModificacionChula  SegundaModificacionDesdeGitBash
+
+jesus@DESKTOP-7SQA7SN MINGW64 /d/Pruebas_GIT/MiRepositorioPrueba (master)
+$ cd Local_Curso01
+
+jesus@DESKTOP-7SQA7SN MINGW64 /d/Pruebas_GIT/MiRepositorioPrueba/Local_Curso01 (master)
+$ touch TercerModDesdeGitBash
+
+jesus@DESKTOP-7SQA7SN MINGW64 /d/Pruebas_GIT/MiRepositorioPrueba/Local_Curso01 (master)
+$ git add .
+
+jesus@DESKTOP-7SQA7SN MINGW64 /d/Pruebas_GIT/MiRepositorioPrueba/Local_Curso01 (master)
+$ git commid
+git: 'commid' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+jesus@DESKTOP-7SQA7SN MINGW64 /d/Pruebas_GIT/MiRepositorioPrueba/Local_Curso01 (master)
+$ git commit
+Aborting commit due to empty commit message.
+
+jesus@DESKTOP-7SQA7SN MINGW64 /d/Pruebas_GIT/MiRepositorioPrueba/Local_Curso01 (master)
+$ git commit
+[master fb45e8c] EstaEsLaTeceraPruebaGitBush
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Local_Curso01/TercerModDesdeGitBash
+
+jesus@DESKTOP-7SQA7SN MINGW64 /d/Pruebas_GIT/MiRepositorioPrueba/Local_Curso01 (master)
+$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 358 bytes | 358.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/jesusabo/MiRepositorioPrueba.git
+   a88cff1..fb45e8c  master -> master
+
+jesus@DESKTOP-7SQA7SN MINGW64 /d/Pruebas_GIT/MiRepositorioPrueba/Local_Curso01 (master)
+$
